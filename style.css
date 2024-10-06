@@ -219,17 +219,17 @@ body p {
 /* Tablets (telas menores que 768px) */
 @media (max-width: 768px) {
     .form-container form {
-        width: 90%;
-        padding-left: 0.5em;
+        width: 400px;
+        padding-left: .5em;
     }
 
     .input-container input {
-        width: 70%;
-        font-size: 0.9em;
+        width: 90%;
+        font-size: .8em;
     }
 
     .form-container button {
-        padding: 0.8em;
+        padding: .8em;
         font-size: 1em;
     }
 
@@ -240,7 +240,7 @@ body p {
 
     .result {
         width: 100%;
-        padding: 0.8em;
+        padding: .8em;
     }
 
     .temp div h3 {
@@ -248,7 +248,7 @@ body p {
     }
 
     .info {
-        padding: 0.8em 0.4em;
+        padding: .8em .4em;
     }
 
     .info i {
@@ -263,23 +263,22 @@ body p {
     }
 
     body p {
-        font-size: 0.9em;
+        font-size: .9em;
     }
 
     .form-container form {
         width: 100%;
-        padding-left: 0.5em;
+        padding-left: .5em;
     }
 
     .input-container input {
-        width: 60%;
-        font-size: 0.8em;
-        padding: 0.8em;
+        width: 80%;
+        padding: .8em;
     }
 
     .form-container button {
-        padding: 0.8em;
-        font-size: 0.9em;
+        padding: .8em;
+        font-size: .9em;
     }
 
     .result-container {
@@ -288,7 +287,7 @@ body p {
     }
 
     .result {
-        padding: 0.5em;
+        padding: .5em;
     }
 
     .temp div h3 {
@@ -296,7 +295,7 @@ body p {
     }
 
     .info {
-        padding: 0.6em 0.3em;
+        padding: .6em .3em;
     }
 
     .info i {
@@ -304,6 +303,6 @@ body p {
     }
 
     .info div h4 {
-        font-size: 0.7em;
+        font-size: .7em;
     }
 }
