@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClimaCEP</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 data-aos="fade-down">ClimaCEP</h1>
+    <p class="description" data-aos="fade-down">Descubra informações sobre seu endereço e clima local usando apenas o CEP</p>
+
+    <!-- FORM -->
+    <div class="form-container" data-aos="zoom-in">
+        <form method="post" id="form" autocomplete="off">
+            <div class="input-container">
+                <label for="cep">
+                    <i class="fa-solid fa-location-dot"></i>
+                </label>
+                <input type="number" name="cep" id="cep" placeholder="Digite seu CEP aqui" maxlength="8" required>
+            </div>
+            <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+    </div>
+
+    <!-- RESULT -->
+    <div class="result-container" id="result-container"></div>
+
+    <!-- AOS SCRIPT -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 1450,
+        })
+    </script>
+
+    <!-- SRCIPT -->
+    <script src="script.js"></script>
+</body>
+</html>
