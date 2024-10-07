@@ -97,7 +97,7 @@ form.addEventListener("submit", (e) => {
                                         <div class="info">
                                             <i class="fa-solid fa-droplet"></i>
                                             <div>
-                                                <h4>Humidade</h4>
+                                                <h4>Umidade</h4>
                                                 <p>${weatherData.main.humidity}%</p>
                                             </div>
                                         </div>
@@ -113,7 +113,7 @@ form.addEventListener("submit", (e) => {
                             </div>
                         `
 
-                        // Adicionando HTML no campo de resultado
+                        // Adicionando HTML do endereço e do clima no campo de resultado
                         resultContainer.innerHTML = cepResult + weatherResult
 
                         // Exibindo HTML dos resultados quando ambos forem renderizados
