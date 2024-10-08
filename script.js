@@ -55,7 +55,7 @@ form.addEventListener("submit", (e) => {
 
                 // Atribuindo valor a variável da cidade
                 const city = cepData.localidade
-   
+
                 // Variável para a chave da API
                 const apiKey = "363a658636f85bd05be2658e0ee68a53"
 
@@ -69,13 +69,13 @@ form.addEventListener("submit", (e) => {
                         // Criando o HTML para exibir as informações do clima
                         const weatherResult = `
                             <div class="result weather-result">
-                                <h2>${cepData.localidade} - ${cepData.uf}</h2>
+                        <h2>${cepData.localidade} - ${cepData.uf}</h2>
                                 <hr>
                                 <div class="infos">
                                     <div class="temp">
                                         <img src="http://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png" alt="Clima">
                                         <div>
-                                            <h3>${weatherData.main.temp.toFixed(1)}<sup>ºC</sup></h3>
+                                    <h3>${weatherData.main.temp.toFixed(1)}<sup>ºC</sup></h3>
                                             <p>${weatherData.weather[0].description}</p>
                                         </div>
                                     </div>
@@ -118,7 +118,7 @@ form.addEventListener("submit", (e) => {
 
                         // Exibindo HTML dos resultados quando ambos forem renderizados
                         resultContainer.classList.remove("hidden")
-                        
+
                         // Limpando o campo de input e colocando o foco de volta no campo de input do CEP
                         form.reset()
                         cepInput.focus()
